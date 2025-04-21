@@ -1,163 +1,598 @@
 ---
-layout: home
-title: "Sophie | Data Analyst & BI Specialist"
+layout: default
+title: "Claudia ten Hoope | Data Scientist"
 ---
 
-<!-- 首页 Hero 区 -->
-<section class="hero">
-  <div class="container">
-    <h1>Hi, I'm Sophie</h1>
-    <p class="subtitle">Data Analyst · BI Specialist · AI Practitioner</p>
-    <p>I transform data into meaningful insights and build smart, automated solutions.</p>
-    <a href="#projects" class="btn">Explore My Work</a>
-  </div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="I am a freelance data scientist/analyst and translate data into valuable insights. My goal is to improve results, make the right decisions and save costs.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset and Base Styles */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-<!-- About 区域 -->
-<section id="about">
-  <div class="container">
-    <h2>About Me</h2>
-    <p>I'm a data analyst with over three years of experience in the healthcare industry. My passion lies in turning complex datasets into compelling visual stories, empowering decision-makers with real-time insights, and streamlining reporting workflows through AI automation.</p>
-    <p>As a lifelong learner, I’m actively exploring AI Engineering and love applying creative problem-solving to real-world challenges. I thrive in collaborative environments and am always eager to learn from brilliant minds.</p>
-  </div>
-</section>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333943;
+            background-color: #fbfbfb;
+            overflow-x: hidden;
+        }
 
-<!-- Projects 区域 -->
-<section id="projects">
-  <div class="container">
-    <h2>Projects</h2>
-    <div class="project-grid">
-      <div class="project">
-        <h3>Healthcare Claims Dashboard</h3>
-        <p>Developed an interactive Power BI dashboard to monitor $100M+ in healthcare claims across multiple states, improving executive visibility and reducing ad-hoc analysis time by 60%.</p>
-      </div>
-      <div class="project">
-        <h3>AI-Powered Report Generator</h3>
-        <p>Built an automated reporting pipeline using SQL, Python, and ChatGPT via n8n, saving 5+ hours per week and enabling dynamic report customization.</p>
-      </div>
-      <div class="project">
-        <h3>Scalable Spark Data Pipeline</h3>
-        <p>Implemented an Apache Spark pipeline in Databricks to process 5M+ medical records, cutting ETL runtime by 40% and enhancing data reliability for downstream analysis.</p>
-      </div>
-      <div class="project">
-        <h3>Prediction Model with Limited Observations</h3>
-        <p>Built a regression model using 3 out of 21 predictors with only 8 observations, explaining over 99% of response variation. Tackled redundancy and multicollinearity with effective variable selection.</p>
-      </div>
-      <div class="project">
-        <h3>Social Media Follower Growth Analysis</h3>
-        <p>Identified the most influential factors driving follower growth for a media platform using regression analysis and business analytics techniques.</p>
-      </div>
-      <div class="project">
-        <h3>US Natural Disaster Impact Assessment</h3>
-        <p>Analyzed storm data to identify the most harmful natural events in the U.S. in terms of population health and economic damage using exploratory data analysis and aggregation techniques.</p>
-      </div>
-      <div class="project">
-        <h3>Human Activity Recognition with Wearable Devices</h3>
-        <p>Built classification models on accelerometer data (160 features, 19,622 records) using PCA and six machine learning models. Random forest achieved 97% accuracy in cross-validation.</p>
-      </div>
-      <div class="project">
-        <h3>COVID-19 Healthcare Resource Dashboard</h3>
-        <p>Created a real-time dashboard to track regional COVID-19 trends for both public and internal use. Enabled strategic staff allocation based on insights from time, location, and source analysis.</p>
-      </div>
-    </div>
-  </div>
-</section>
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
+        h1, h2, h3, h4, h5, h6 {
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
 
-<!-- Contact 区域 -->
-<section id="contact">
-  <div class="container">
-    <h2>Contact Me</h2>
-    <p>Email: sophie.xuezhang@email.com</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/sophie-xuezhang/">https://www.linkedin.com/in/sophie-xuezhang/</a></p>
-    <p>GitHub: <a href="https://github.com/SophieXueZhang">https://github.com/SophieXueZhang</a></p>
-  </div>
-</section>
+        p {
+            margin-bottom: 1rem;
+        }
 
-<!-- 样式优化：字体、字号、配色参考 claudiatenhoope.com -->
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+        a {
+            color: #89adc2;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
 
-  body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    background: #ffffff;
-    color: #333333;
-    margin: 0;
-    padding: 0;
-    line-height: 1.7;
-  }
-  h1, h2, h3 {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    color: #444444;
-    margin-bottom: 0.8rem;
-  }
-  h1 {
-    font-size: 2.4rem;
-  }
-  h2 {
-    font-size: 1.6rem;
-  }
-  h3 {
-    font-size: 1.25rem;
-  }
-  .container {
-    max-width: 880px;
-    margin: 0 auto;
-    padding: 2rem;
-  }
-  .hero {
-    background: #f7f7f7;
-    padding: 5rem 0;
-    text-align: center;
-  }
-  .hero h1 {
-    font-size: 2.8rem;
-    margin-bottom: 0.6rem;
-  }
-  .subtitle {
-    font-size: 1.1rem;
-    color: #666666;
-    margin-bottom: 1.5rem;
-  }
-  .btn {
-    background: #000000;
-    color: #ffffff;
-    padding: 0.6rem 1.4rem;
-    text-decoration: none;
-    font-weight: 600;
-    border-radius: 3px;
-    font-size: 0.95rem;
-    transition: background 0.3s ease;
-  }
-  .btn:hover {
-    background: #005baa;
-  }
-  section {
-    margin-bottom: 4rem;
-  }
-  .project-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1.5rem;
-  }
-  .project {
-    background: #fafafa;
-    padding: 1.2rem;
-    border: 1px solid #dddddd;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-  }
-  .project:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
-  }
-  a {
-    color: #005baa;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-</style>
+        a:hover {
+            color: #333943;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        ul {
+            list-style-position: inside;
+            margin-bottom: 1rem;
+        }
+
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Cloud Background */
+        .cloud-bg {
+            background-image: url('https://images.unsplash.com/photo-1505533321630-975218a5f66f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            background-color: #b4c7d8;
+            color: white;
+            padding: 120px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .cloud-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(180, 199, 216, 0.7);
+            z-index: 1;
+        }
+
+        .cloud-bg .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            width: 180px;
+        }
+
+        .hero h1 {
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin-top: 10px;
+        }
+
+        /* Quote Section */
+        .quote {
+            padding: 60px 0;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.4rem;
+            font-weight: 300;
+            position: relative;
+        }
+
+        .quote::before, .quote::after {
+            content: '"';
+            font-size: 4rem;
+            line-height: 0;
+            color: #b4c7d8;
+            position: absolute;
+            opacity: 0.5;
+        }
+
+        .quote::before {
+            top: 50px;
+            left: 0;
+        }
+
+        .quote::after {
+            bottom: 0;
+            right: 0;
+            transform: rotate(180deg);
+        }
+
+        /* Sections */
+        .section {
+            padding: 60px 0;
+        }
+
+        .section-title {
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: #333943;
+        }
+
+        /* Services Section */
+        .services-intro {
+            margin-bottom: 40px;
+            max-width: 800px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service {
+            display: flex;
+            margin-bottom: 30px;
+        }
+
+        .service-icon {
+            flex: 0 0 70px;
+            margin-right: 20px;
+        }
+
+        .service-content h3 {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .service-content p {
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        .example-link {
+            color: #89adc2;
+            font-size: 0.9rem;
+        }
+
+        /* About Section */
+        .about {
+            background-color: #b4c7d8;
+            position: relative;
+        }
+
+        .about-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .about-content {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .about-image {
+            flex: 0 0 300px;
+            text-align: right;
+        }
+
+        .about-image img {
+            max-width: 100%;
+            border-radius: 4px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .signature {
+            max-width: 150px;
+            margin-top: 20px;
+        }
+
+        .highlight {
+            font-weight: 600;
+        }
+
+        /* CTA Section */
+        .cta {
+            background-color: #b4c7d8;
+            text-align: center;
+            padding: 60px 0;
+        }
+
+        .cta-title {
+            font-size: 1.4rem;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: white;
+            color: #333943;
+            padding: 12px 30px;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            font-family: 'Montserrat', sans-serif;
+            transition: all 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #333943;
+            color: white;
+        }
+
+        /* Portfolio Section */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-item:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Contact Section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .contact-item h3 {
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #b4c7d8;
+            padding: 30px 0;
+            color: #333943;
+            font-size: 0.9rem;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-info {
+            margin-bottom: 15px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 10px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-color: #fbfbfb;
+            color: #b4c7d8;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background-color: #333943;
+            color: white;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .hero {
+                min-height: 40vh;
+            }
+
+            .about-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .about-image {
+                order: -1;
+                text-align: center;
+            }
+
+            .signature {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .quote {
+                font-size: 1.2rem;
+                padding: 40px 20px;
+            }
+
+            .footer-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .social-links {
+                margin-top: 20px;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="cloud-bg hero">
+        <div class="container">
+            <div class="logo">
+                <img src="https://placehold.co/180x180/b4c7d8/fff?text=C" alt="Claudia ten Hoope Logo">
+            </div>
+            <h1>Data scientist</h1>
+        </div>
+    </header>
+
+    <!-- Quote Section -->
+    <section class="quote">
+        <div class="container">
+            <p>I want to help others to make the right decisions, data-driven decisions</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" id="services">
+        <div class="container">
+            <h2 class="section-title">SERVICES</h2>
+
+            <div class="services-intro">
+                <p>As a freelance data analyst and data scientist, I translate data into valuable and comprehensible insights. My goal is to improve results, make the right decisions and save costs.</p>
+                <p>I am experienced in machine learning (supervised and unsupervised algorithms) and use data visualization techniques to present the results (PowerBI, Python and Tableau) for my data projects.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service">
+                    <div class="service-icon">
+                        <img src="https://placehold.co/70x70/b4c7d8/fff?text=DA" alt="Data analysis icon">
+                    </div>
+                    <div class="service-content">
+                        <h3>Data analysis</h3>
+                        <p>Searching for meaning by analyzing data. Results, trends and recommendations are clearly presented in reports or tools.</p>
+                    </div>
+                </div>
+
+                <div class="service">
+                    <div class="service-icon">
+                        <img src="https://placehold.co/70x70/b4c7d8/fff?text=AC" alt="Advice and coaching projects icon">
+                    </div>
+                    <div class="service-content">
+                        <h3>Advice and coaching projects</h3>
+                        <p>Before and during data related projects, I give advice on the progress of the project and I coach data analysts.</p>
+                    </div>
+                </div>
+
+                <div class="service">
+                    <div class="service-icon">
+                        <img src="https://placehold.co/70x70/b4c7d8/fff?text=DA" alt="Data analytics icon">
+                    </div>
+                    <div class="service-content">
+                        <h3>Data analytics</h3>
+                        <p>Get insights from your data with prediction models and machine learning techniques, for example by predicting behavior or targeting the right customer.</p>
+                    </div>
+                </div>
+
+                <div class="service">
+                    <div class="service-icon">
+                        <img src="https://placehold.co/70x70/b4c7d8/fff?text=II" alt="Interactive infographics icon">
+                    </div>
+                    <div class="service-content">
+                        <h3>(Interactive) infographics</h3>
+                        <p>Present your data in an inspiring way by using an infographic rather than a piece of text. I create interactive infographics which can be used internally or publicly.</p>
+                    </div>
+                </div>
+
+                <div class="service">
+                    <div class="service-icon">
+                        <img src="https://placehold.co/70x70/b4c7d8/fff?text=DB" alt="Dashboards icon">
+                    </div>
+                    <div class="service-content">
+                        <h3>Dashboards</h3>
+                        <p>Dashboards show the most recent results and trends in a visual way. By clicking and drilling, you will examine trends and insight your data.</p>
+                    </div>
+                </div>
+
+                <div class="service">
+                    <div class="service-icon">
+                        <img src="https://placehold.co/70x70/b4c7d8/fff?text=FE" alt="Front-end web developer icon">
+                    </div>
+                    <div class="service-content">
+                        <h3>Front-end web developer</h3>
+                        <p>As a web developer, I help to design and create websites especially for starters and freelancers. The website is optimized for desktop and smartphone.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="section about" id="about">
+        <div class="container about-container">
+            <div class="about-content">
+                <h2 class="section-title">ABOUT ME</h2>
+
+                <p>Hi, my name is Claudia and I work remotely as a <span class="highlight">freelance data scientist</span>. I hold a Bachelor's and Master's degree in science (Business Analytics, VU University Amsterdam).</p>
+
+                <p>Since I was a child, I have always enjoyed to solve puzzles. So that's how I look at big data sets: to me it's one big puzzle I want to solve. Finding patterns nobody else sees is the fun part!</p>
+
+                <p>I have been working as a data scientist for <span class="highlight">more than ten years</span> with experience in transport logistics and retail. I have worked with more than 25 companies which gives me the ability to translate complex questions into understandable insights.</p>
+
+                <p>Do you want to work together? Please reach out to me by e-mail.</p>
+
+                <img src="https://placehold.co/150x50/fff/b4c7d8?text=Claudia" alt="Claudia signature" class="signature">
+            </div>
+
+            <div class="about-image">
+                <img src="https://placehold.co/300x400/fff/b4c7d8?text=Claudia" alt="Claudia ten Hoope profile photo">
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2 class="cta-title">WONDERING HOW YOU CAN MAKE THE BEST DECISIONS USING YOUR DATA?</h2>
+            <a href="#contact" class="button">Get in touch</a>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section" id="portfolio">
+        <div class="container">
+            <h2 class="section-title">PORTFOLIO</h2>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="https://placehold.co/400x300/b4c7d8/fff?text=Data+Analytics" alt="Data Analytics Project">
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://placehold.co/400x300/b4c7d8/fff?text=Data+Analysis" alt="Data Analysis Project">
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://placehold.co/400x300/b4c7d8/fff?text=Dashboard" alt="Dashboard Overview">
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://placehold.co/400x300/b4c7d8/fff?text=Web+Design" alt="Web Design Project">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section-title">CONTACT</h2>
+
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <p>Claudia</p>
+                    <p>As a data scientist, I know exactly how you can use data optimally within your business. Based on your objectives, we will make a plan to reach the right insight.</p>
+
+                    <h3>I am available for:</h3>
+                    <ul>
+                        <li>Data science (prediction models, segmentations)</li>
+                        <li>Data analysis</li>
+                        <li>Data visualization (infographics, dashboards)</li>
+                        <li>Advice and coaching data projects</li>
+                        <li>Training and workshops (start with data analysis, how to answer questions with data, hands-on SQL, how to present data)</li>
+                        <li>Presentations (storytelling, how to present data, how do other businesses use data)</li>
+                    </ul>
+                </div>
+
+                <div class="contact-item">
+                    <h3>Rates:</h3>
+                    <ul>
+                        <li>Data science, data analysis and visualization projects on request</li>
+                        <li>Presentations, training and workshops on request</li>
+                        <li>Full-day training on request</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div>
+                <div class="footer-info">
+                    <p>Claudia ten Hoope</p>
+                    <p>info@claudiatenhoope.com</p>
+                </div>
+                <div class="footer-info">
+                    <p>Location:</p>
+                    <p>Amsterdam region (the Netherlands) or remote work</p>
+                </div>
+                <div class="footer-info">
+                    <p>KvK: 69790906</p>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="#" title="LinkedIn">in</a>
+                <a href="#" title="Email">@</a>
+            </div>
+        </div>
+        <div class="container" style="text-align: center; padding-top: 20px; font-size: 0.8rem;">
+            <p>© 2023 Claudia ten Hoope</p>
+        </div>
+    </footer>
+</body>
+</html>
