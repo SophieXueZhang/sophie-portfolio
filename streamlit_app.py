@@ -8,27 +8,51 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# 自定义CSS样式
+# 隐藏Streamlit默认元素和侧边栏
 st.markdown("""
 <style>
+    /* 隐藏主菜单 */
+    #MainMenu {visibility: hidden;}
+
+    /* 隐藏页脚 */
+    footer {visibility: hidden;}
+
+    /* 隐藏顶部header */
+    header {visibility: hidden;}
+
+    /* 隐藏侧边栏 */
+    .css-1d391kg {display: none;}
+    section[data-testid="stSidebar"] {display: none;}
+
+    /* 移除内边距 */
     .main > div {
         padding-top: 0rem;
         padding-bottom: 0rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
     }
 
-    .stApp > header {
-        background-color: transparent;
-    }
-
+    /* 移除容器边距 */
     .stApp {
         margin: 0;
         padding: 0;
     }
 
+    /* 让iframe占满整个屏幕 */
     iframe {
         border: none;
         height: 100vh;
-        width: 100%;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+
+    /* 隐藏Streamlit的所有默认组件 */
+    .block-container {
+        padding: 0;
+        margin: 0;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -560,44 +584,6 @@ html_content = """
 </html>
 """
 
-# 渲染HTML组件
-components.html(html_content, height=600, scrolling=True)
+# 渲染HTML组件（全屏显示）
+components.html(html_content, height=800, scrolling=True)
 
-# 侧边栏功能（可选）
-with st.sidebar:
-    st.title("✨ 个人主页设置")
-
-    st.subheader("🎨 定制选项")
-
-    # 主题选择
-    theme_color = st.selectbox(
-        "选择主题色调",
-        ["蓝紫渐变", "日落橙红", "森林绿色", "夜空深蓝"]
-    )
-
-    # 粒子数量
-    particle_count = st.slider("粒子数量", 50, 200, 100)
-
-    # 动画速度
-    animation_speed = st.slider("动画速度", 1, 10, 3)
-
-    st.info("💡 修改设置后需要刷新页面生效")
-
-    # 导出功能
-    st.subheader("📁 导出选项")
-    if st.button("下载HTML文件"):
-        st.download_button(
-            label="💾 下载完整HTML",
-            data=html_content,
-            file_name="portfolio.html",
-            mime="text/html"
-        )
-
-# 页脚信息
-st.markdown("---")
-st.markdown("""
-<div style='text-align: center; color: #666;'>
-    <p>🚀 基于 Streamlit 构建的粒子效果个人主页</p>
-    <p>✨ 支持鼠标交互的动态粒子背景</p>
-</div>
-""", unsafe_allow_html=True)
