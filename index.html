@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+
+    <div class="container">
+        <nav class="navbar">
+            <div class="nav-brand">Portfolio</div>
+            <ul class="nav-menu">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于</a></li>
+                <li><a href="#projects">项目</a></li>
+                <li><a href="#contact">联系</a></li>
+            </ul>
+        </nav>
+
+        <main class="hero-section" id="home">
+            <div class="hero-content">
+                <h1 class="hero-title">你好，我是 <span class="highlight">开发者</span></h1>
+                <p class="hero-subtitle">全栈开发工程师 | 用代码创造美好</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">查看项目</a>
+                    <a href="#contact" class="btn btn-secondary">联系我</a>
+                </div>
+            </div>
+        </main>
+
+        <section id="about" class="section">
+            <div class="section-content">
+                <h2>关于我</h2>
+                <p>passionate开发者，专注于前端技术和用户体验。擅长JavaScript、React、Node.js等技术栈，致力于用代码创造更美好的数字体验。</p>
+                <div class="skills">
+                    <div class="skill-item">Frontend</div>
+                    <div class="skill-item">Backend</div>
+                    <div class="skill-item">UI/UX</div>
+                    <div class="skill-item">DevOps</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="section-content">
+                <h2>我的项目</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>项目一</h3>
+                        <p>项目描述...</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>项目二</h3>
+                        <p>项目描述...</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>项目三</h3>
+                        <p>项目描述...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="section-content">
+                <h2>联系我</h2>
+                <p>邮箱: your-email@example.com</p>
+                <p>GitHub: github.com/yourusername</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
