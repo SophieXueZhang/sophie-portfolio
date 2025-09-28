@@ -187,7 +187,7 @@ html_content = """
         }
 
         .hero-subtitle {
-            font-size: 1.3rem;
+            font-size: 1.1rem;
             margin-bottom: 2rem;
             opacity: 0.8;
             color: #6c757d;
