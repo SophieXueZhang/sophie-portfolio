@@ -368,21 +368,21 @@ html_content = """
         }
 
         .about-box {
-            background: rgba(248, 249, 250, 0.8);
-            backdrop-filter: blur(20px);
-            border: 1px solid rgba(206, 212, 218, 0.3);
-            border-radius: 12px;
-            padding: 2.5rem;
+            background: transparent;
+            backdrop-filter: none;
+            border: none;
+            border-radius: 0;
+            padding: 2rem;
             margin: 2rem auto;
             max-width: 700px;
             text-align: left;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-            transition: all 0.3s ease;
+            box-shadow: none;
+            transition: none;
         }
 
         .about-box:hover {
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
-            transform: translateY(-2px);
+            box-shadow: none;
+            transform: none;
         }
 
         .about-box p {
