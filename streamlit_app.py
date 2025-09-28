@@ -64,6 +64,7 @@ html_content = """
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -72,10 +73,12 @@ html_content = """
         }
 
         body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: #ffffff;
+            font-family: 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 50%, #dee2e6 100%);
+            color: #2c3e50;
             overflow-x: hidden;
+            font-weight: 300;
+            letter-spacing: 0.02em;
         }
 
         #particles-js {
@@ -96,9 +99,9 @@ html_content = """
             position: fixed;
             top: 0;
             width: 100%;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            background: rgba(248, 249, 250, 0.85);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(206, 212, 218, 0.3);
             padding: 1rem 2rem;
             display: flex;
             justify-content: space-between;
@@ -108,14 +111,16 @@ html_content = """
         }
 
         .navbar.scrolled {
-            background: rgba(0, 0, 0, 0.3);
-            backdrop-filter: blur(20px);
+            background: rgba(248, 249, 250, 0.95);
+            backdrop-filter: blur(25px);
+            box-shadow: 0 1px 20px rgba(0, 0, 0, 0.05);
         }
 
         .nav-brand {
             font-size: 1.5rem;
-            font-weight: bold;
-            color: #ffffff;
+            font-weight: 500;
+            color: #2c3e50;
+            letter-spacing: 0.05em;
         }
 
         .nav-menu {
@@ -125,14 +130,16 @@ html_content = """
         }
 
         .nav-menu a {
-            color: #ffffff;
+            color: #495057;
             text-decoration: none;
             transition: color 0.3s ease;
             position: relative;
+            font-weight: 400;
+            font-size: 0.95rem;
         }
 
         .nav-menu a:hover {
-            color: #ffd700;
+            color: #2c3e50;
         }
 
         .nav-menu a::after {
@@ -141,8 +148,8 @@ html_content = """
             bottom: -5px;
             left: 0;
             width: 0;
-            height: 2px;
-            background: #ffd700;
+            height: 1px;
+            background: #2c3e50;
             transition: width 0.3s ease;
         }
 
@@ -168,19 +175,23 @@ html_content = """
             font-size: 3.5rem;
             margin-bottom: 1rem;
             line-height: 1.2;
+            font-weight: 300;
+            color: #2c3e50;
         }
 
         .highlight {
-            background: linear-gradient(45deg, #ffd700, #ff6b6b);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            color: #495057;
+            font-weight: 400;
+            border-bottom: 2px solid #dee2e6;
+            padding-bottom: 2px;
         }
 
         .hero-subtitle {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             margin-bottom: 2rem;
-            opacity: 0.9;
+            opacity: 0.8;
+            color: #6c757d;
+            font-weight: 300;
         }
 
         .hero-buttons {
@@ -202,25 +213,28 @@ html_content = """
         }
 
         .btn-primary {
-            background: linear-gradient(45deg, #ffd700, #ff6b6b);
-            color: #000;
+            background: #2c3e50;
+            color: #ffffff;
+            border: 1px solid #2c3e50;
         }
 
         .btn-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+            background: #34495e;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(44, 62, 80, 0.2);
         }
 
         .btn-secondary {
-            background: rgba(255, 255, 255, 0.2);
-            color: #ffffff;
-            border: 2px solid rgba(255, 255, 255, 0.3);
+            background: transparent;
+            color: #2c3e50;
+            border: 1px solid #2c3e50;
         }
 
         .btn-secondary:hover {
-            background: rgba(255, 255, 255, 0.3);
-            transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+            background: #2c3e50;
+            color: #ffffff;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(44, 62, 80, 0.2);
         }
 
         .section {
@@ -234,29 +248,33 @@ html_content = """
         }
 
         .section h2 {
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             margin-bottom: 2rem;
             position: relative;
             display: inline-block;
+            font-weight: 300;
+            color: #2c3e50;
         }
 
         .section h2::after {
             content: '';
             position: absolute;
-            bottom: -10px;
+            bottom: -8px;
             left: 50%;
             transform: translateX(-50%);
-            width: 50px;
-            height: 3px;
-            background: linear-gradient(45deg, #ffd700, #ff6b6b);
+            width: 40px;
+            height: 1px;
+            background: #dee2e6;
         }
 
         .section p {
-            font-size: 1.2rem;
-            line-height: 1.6;
-            opacity: 0.9;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            opacity: 0.85;
             max-width: 600px;
             margin: 0 auto;
+            color: #495057;
+            font-weight: 300;
         }
 
         .projects-grid {
@@ -267,24 +285,25 @@ html_content = """
         }
 
         .project-card {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
+            background: rgba(248, 249, 250, 0.8);
+            backdrop-filter: blur(20px);
+            border-radius: 12px;
             padding: 2rem;
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(206, 212, 218, 0.3);
             transition: all 0.3s ease;
         }
 
         .project-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+            background: rgba(255, 255, 255, 0.9);
         }
 
         .project-card h3 {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             margin-bottom: 1rem;
-            color: #ffd700;
+            color: #2c3e50;
+            font-weight: 400;
         }
 
         .skills {
@@ -320,30 +339,32 @@ html_content = """
         }
 
         .skill-category {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 15px;
+            background: rgba(248, 249, 250, 0.7);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(206, 212, 218, 0.3);
+            border-radius: 10px;
             padding: 1.5rem;
             transition: all 0.3s ease;
         }
 
         .skill-category:hover {
-            background: rgba(255, 215, 0, 0.1);
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(255, 215, 0, 0.1);
+            background: rgba(255, 255, 255, 0.85);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
         }
 
         .skill-category h4 {
-            color: #ffd700;
+            color: #2c3e50;
             margin-bottom: 0.5rem;
             font-size: 1.1rem;
+            font-weight: 400;
         }
 
         .skill-category p {
-            color: #ffffff;
-            opacity: 0.9;
+            color: #495057;
+            opacity: 0.85;
             font-size: 0.9rem;
+            font-weight: 300;
         }
 
         @keyframes fadeInUp {
@@ -494,7 +515,7 @@ html_content = """
                     }
                 },
                 "color": {
-                    "value": "#ffffff"
+                    "value": "#6c757d"
                 },
                 "shape": {
                     "type": "circle",
@@ -526,7 +547,7 @@ html_content = """
                 "line_linked": {
                     "enable": true,
                     "distance": 150,
-                    "color": "#ffffff",
+                    "color": "#6c757d",
                     "opacity": 0.4,
                     "width": 1
                 },
