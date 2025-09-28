@@ -306,6 +306,17 @@ html_content = """
             font-weight: 400;
         }
 
+        .project-card h3 a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .project-card h3 a:hover {
+            color: #495057;
+            text-decoration: underline;
+        }
+
         .skills {
             display: flex;
             justify-content: center;
@@ -523,7 +534,7 @@ html_content = """
                 <h2>My Projects</h2>
                 <div class="projects-grid">
                     <div class="project-card">
-                        <h3>AI Health Assistant</h3>
+                        <h3><a href="https://hospital-lengthofstay-dashboard.streamlit.app/" target="_blank" rel="noopener noreferrer">AI Health Assistant</a></h3>
                         <p>A Streamlit-based dialogue system that explains health reports, highlights risks, and provides easy-to-understand insights.</p>
                     </div>
                     <div class="project-card">
