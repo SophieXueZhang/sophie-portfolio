@@ -542,10 +542,6 @@ html_content = """
                         <p>An interactive analysis tool using Python + Plotly, helping non-technical users explore and interpret data intuitively.</p>
                     </div>
                     <div class="project-card">
-                        <h3>Provider Data Quality Monitor</h3>
-                        <p>A Power BI report + automated pipeline tracking provider data preprocessing, invalid phone detection, and anomaly alerts.</p>
-                    </div>
-                    <div class="project-card">
                         <h3>Contract Insights Dashboard</h3>
                         <p>A visualization tool analyzing healthcare contracts by stage, client type, and risk class—helping leadership make faster decisions.</p>
                     </div>
