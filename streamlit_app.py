@@ -515,7 +515,7 @@ html_content = """
                     </div>
                     <div class="skill-category">
                         <h4>AI & Automation</h4>
-                        <p>Streamlit, LangChain, n8n, Databricks</p>
+                        <p>LangChain, n8n, Databricks, workflow orchestration</p>
                     </div>
                     <div class="skill-category">
                         <h4>LLM & AI Applications</h4>
