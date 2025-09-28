@@ -367,6 +367,32 @@ html_content = """
             font-weight: 300;
         }
 
+        .about-box {
+            background: rgba(248, 249, 250, 0.8);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(206, 212, 218, 0.3);
+            border-radius: 12px;
+            padding: 2.5rem;
+            margin: 2rem auto;
+            max-width: 700px;
+            text-align: left;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .about-box:hover {
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            transform: translateY(-2px);
+        }
+
+        .about-box p {
+            margin-bottom: 1.2rem;
+        }
+
+        .about-box p:last-child {
+            margin-bottom: 0;
+        }
+
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -438,9 +464,11 @@ html_content = """
         <section id="about" class="section">
             <div class="section-content">
                 <h2>About Me</h2>
-                <p>I'm a passionate data analyst with 3+ years of experience in healthcare insurance, skilled at building data visualizations, automated workflows, and AI-powered applications.</p>
-                <p>I enjoy making complex information easy to understand, whether through Power BI dashboards, Streamlit apps, or automated pipelines.</p>
-                <p>My focus: combining data, AI, and user experience to create tools that actually help people.</p>
+                <div class="about-box">
+                    <p>I'm a passionate data analyst with 3+ years of experience in healthcare insurance, skilled at building data visualizations, automated workflows, and AI-powered applications.</p>
+                    <p>I enjoy making complex information easy to understand, whether through Power BI dashboards, Streamlit apps, or automated pipelines.</p>
+                    <p>My focus: combining data, AI, and user experience to create tools that actually help people.</p>
+                </div>
 
                 <h3 style="margin-top: 2rem; margin-bottom: 1rem; color: #495057;">Key Skills</h3>
                 <div class="skills-grid">
