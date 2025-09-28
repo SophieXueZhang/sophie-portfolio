@@ -510,8 +510,8 @@ html_content = """
                 <h3 style="margin-top: 2rem; margin-bottom: 1rem; color: #495057;">Key Skills</h3>
                 <div class="skills-grid">
                     <div class="skill-category">
-                        <h4>Data Analysis</h4>
-                        <p>SQL, Python, Power BI, Tableau</p>
+                        <h4>Data Science</h4>
+                        <p>SQL, Python, Power BI, Machine Learning</p>
                     </div>
                     <div class="skill-category">
                         <h4>AI & Automation</h4>
