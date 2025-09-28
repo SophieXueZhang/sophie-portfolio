@@ -393,6 +393,32 @@ html_content = """
             margin-bottom: 0;
         }
 
+        .contact-box {
+            background: transparent;
+            backdrop-filter: none;
+            border: none;
+            border-radius: 0;
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 700px;
+            text-align: left;
+            box-shadow: none;
+            transition: none;
+        }
+
+        .contact-box:hover {
+            box-shadow: none;
+            transform: none;
+        }
+
+        .contact-box p {
+            margin-bottom: 1.2rem;
+        }
+
+        .contact-box p:last-child {
+            margin-bottom: 0;
+        }
+
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -519,10 +545,12 @@ html_content = """
         <section id="contact" class="section">
             <div class="section-content">
                 <h2>Contact Me</h2>
-                <p>Email: haggler-shelf-putt@duck.com</p>
-                <p>GitHub: https://github.com/SophieXueZhang</p>
-                <p>LinkedIn: https://www.linkedin.com/in/sophie-xuezhang/</p>
-                <p>Streamlit Cloud: My deployed apps</p>
+                <div class="contact-box">
+                    <p>Email: haggler-shelf-putt@duck.com</p>
+                    <p>GitHub: https://github.com/SophieXueZhang</p>
+                    <p>LinkedIn: https://www.linkedin.com/in/sophie-xuezhang/</p>
+                    <p>Streamlit Cloud: My deployed apps</p>
+                </div>
 
                 <div class="quote" style="margin-top: 3rem; padding: 2rem; background: rgba(255, 255, 255, 0.1); border-radius: 15px; text-align: center; font-style: italic; font-size: 1.2rem; color: #6c757d;">
                     "Great data + good design = better decisions."
