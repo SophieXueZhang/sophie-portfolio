@@ -406,7 +406,7 @@ html_content = """
         <main class="hero-section" id="home">
             <div class="hero-content">
                 <h1 class="hero-title">Hello, I'm <span class="highlight">Sophie</span></h1>
-                <p class="hero-subtitle">Data Analyst & AI Enthusiast | Turning Data into Insights & Experiences</p>
+                <p class="hero-subtitle">Business Solutions Developer & AI Enthusiast | Turning Data into Insights & Experiences</p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">View Projects</a>
                     <a href="#contact" class="btn btn-secondary">Contact Me</a>
