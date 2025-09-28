@@ -491,8 +491,9 @@ html_content = """
         <section id="contact" class="section">
             <div class="section-content">
                 <h2>Contact Me</h2>
-                <p>Email: your-email@example.com</p>
-                <p>GitHub: github.com/yourusername</p>
+                <p>Email: haggler-shelf-putt@duck.com</p>
+                <p>GitHub: https://github.com/SophieXueZhang</p>
+                <p>LinkedIn: https://www.linkedin.com/in/sophie-xuezhang/</p>
                 <p>Streamlit Cloud: My deployed apps</p>
 
                 <div class="quote" style="margin-top: 3rem; padding: 2rem; background: rgba(255, 255, 255, 0.1); border-radius: 15px; text-align: center; font-style: italic; font-size: 1.2rem; color: #6c757d;">
