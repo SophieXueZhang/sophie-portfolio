@@ -2,7 +2,7 @@ import streamlit as st
 import streamlit.components.v1 as components
 
 st.set_page_config(
-    page_title="Personal Portfolio",
+    page_title="Portfolio",
     page_icon="✨",
     layout="wide",
     initial_sidebar_state="collapsed"
@@ -64,7 +64,7 @@ html_content = """
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
+    <title>Portfolio</title>
     <style>
         * {
             margin: 0;
@@ -313,6 +313,40 @@ html_content = """
             box-shadow: 0 10px 20px rgba(255, 215, 0, 0.2);
         }
 
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .skill-category {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .skill-category:hover {
+            background: rgba(255, 215, 0, 0.1);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(255, 215, 0, 0.1);
+        }
+
+        .skill-category h4 {
+            color: #ffd700;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .skill-category p {
+            color: #ffffff;
+            opacity: 0.9;
+            font-size: 0.9rem;
+        }
+
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -372,8 +406,8 @@ html_content = """
 
         <main class="hero-section" id="home">
             <div class="hero-content">
-                <h1 class="hero-title">Hello, I'm a <span class="highlight">Developer</span></h1>
-                <p class="hero-subtitle">Full-Stack Engineer | Creating Amazing Digital Experiences</p>
+                <h1 class="hero-title">👋 Hello, I'm <span class="highlight">Sophie</span></h1>
+                <p class="hero-subtitle">Data Analyst & AI Enthusiast | Turning Data into Insights & Experiences</p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">View Projects</a>
                     <a href="#contact" class="btn btn-secondary">Contact Me</a>
@@ -383,32 +417,52 @@ html_content = """
 
         <section id="about" class="section">
             <div class="section-content">
-                <h2>About Me</h2>
-                <p>Passionate developer focused on frontend technologies and user experience. Skilled in JavaScript, React, Node.js and other tech stacks, committed to creating better digital experiences through code.</p>
-                <div class="skills">
-                    <div class="skill-item">Frontend</div>
-                    <div class="skill-item">Backend</div>
-                    <div class="skill-item">UI/UX</div>
-                    <div class="skill-item">DevOps</div>
+                <h2>🔍 About Me</h2>
+                <p>I'm a passionate data analyst with 3+ years of experience in healthcare insurance, skilled at building data visualizations, automated workflows, and AI-powered applications.</p>
+                <p>I enjoy making complex information easy to understand, whether through Power BI dashboards, Streamlit apps, or automated pipelines.</p>
+                <p>My focus: combining data, AI, and user experience to create tools that actually help people.</p>
+
+                <h3 style="margin-top: 2rem; margin-bottom: 1rem; color: #ffd700;">Key Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>Data Analysis</h4>
+                        <p>SQL, Python, Power BI, Tableau</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4>AI & Automation</h4>
+                        <p>Streamlit, LangChain, n8n, Databricks</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Visualization & UX</h4>
+                        <p>Plotly, interactive dashboards</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Collaboration & Delivery</h4>
+                        <p>Agile, cross-team projects</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="projects" class="section">
             <div class="section-content">
-                <h2>My Projects</h2>
+                <h2>🚀 My Projects</h2>
                 <div class="projects-grid">
                     <div class="project-card">
-                        <h3>AI Assistant</h3>
-                        <p>Intelligent dialogue system built with Streamlit, integrating advanced NLP technologies</p>
+                        <h3>AI Health Assistant</h3>
+                        <p>A Streamlit-based dialogue system that explains health reports, highlights risks, and provides easy-to-understand insights.</p>
                     </div>
                     <div class="project-card">
                         <h3>Data Visualization Platform</h3>
-                        <p>Interactive data analysis tool built with Python and Plotly</p>
+                        <p>An interactive analysis tool using Python + Plotly, helping non-technical users explore and interpret data intuitively.</p>
                     </div>
                     <div class="project-card">
-                        <h3>Web Application Development</h3>
-                        <p>Modern responsive web applications with particle animation effects</p>
+                        <h3>Provider Data Quality Monitor</h3>
+                        <p>A Power BI report + automated pipeline tracking provider data preprocessing, invalid phone detection, and anomaly alerts.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Contract Insights Dashboard</h3>
+                        <p>A visualization tool analyzing healthcare contracts by stage, client type, and risk class—helping leadership make faster decisions.</p>
                     </div>
                 </div>
             </div>
@@ -416,10 +470,14 @@ html_content = """
 
         <section id="contact" class="section">
             <div class="section-content">
-                <h2>Contact Me</h2>
+                <h2>📬 Contact Me</h2>
                 <p>Email: your-email@example.com</p>
                 <p>GitHub: github.com/yourusername</p>
-                <p>Streamlit Cloud: Cloud-deployed applications</p>
+                <p>Streamlit Cloud: My deployed apps</p>
+
+                <div class="quote" style="margin-top: 3rem; padding: 2rem; background: rgba(255, 255, 255, 0.1); border-radius: 15px; text-align: center; font-style: italic; font-size: 1.2rem; color: #ffd700;">
+                    ✨ "Great data + good design = better decisions."
+                </div>
             </div>
         </section>
     </div>

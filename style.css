@@ -306,3 +306,37 @@ body {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(255, 215, 0, 0.2);
 }
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.skill-category {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.skill-category:hover {
+    background: rgba(255, 215, 0, 0.1);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(255, 215, 0, 0.1);
+}
+
+.skill-category h4 {
+    color: #ffd700;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.skill-category p {
+    color: #ffffff;
+    opacity: 0.9;
+    font-size: 0.9rem;
+}
