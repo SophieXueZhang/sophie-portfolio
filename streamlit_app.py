@@ -491,9 +491,9 @@ html_content = """
             <div class="section-content">
                 <h2>About Me</h2>
                 <div class="about-box">
-                    <p>I'm a passionate data analyst with 3+ years of experience in healthcare insurance, skilled at building data visualizations, automated workflows, and AI-powered applications.</p>
-                    <p>I enjoy making complex information easy to understand, whether through Power BI dashboards, Streamlit apps, or automated pipelines.</p>
-                    <p>My focus: combining data, AI, and user experience to create tools that actually help people.</p>
+                    <p>I am a Business Solutions Developer with several years of experience in the healthcare industry, specializing in data visualization, workflow automation, and AI-driven applications.</p>
+                    <p>My expertise lies in transforming complex datasets into clear, actionable insights that support strategic decision-making.</p>
+                    <p>I focus on combining data, artificial intelligence, and user-centered design to deliver solutions that improve efficiency, enhance decision quality, and generate measurable business value.</p>
                 </div>
 
                 <h3 style="margin-top: 2rem; margin-bottom: 1rem; color: #495057;">Key Skills</h3>
