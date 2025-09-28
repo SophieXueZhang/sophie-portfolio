@@ -3,7 +3,6 @@ import streamlit.components.v1 as components
 
 st.set_page_config(
     page_title="Portfolio",
-    page_icon="✨",
     layout="wide",
     initial_sidebar_state="collapsed"
 )
@@ -406,7 +405,7 @@ html_content = """
 
         <main class="hero-section" id="home">
             <div class="hero-content">
-                <h1 class="hero-title">👋 Hello, I'm <span class="highlight">Sophie</span></h1>
+                <h1 class="hero-title">Hello, I'm <span class="highlight">Sophie</span></h1>
                 <p class="hero-subtitle">Data Analyst & AI Enthusiast | Turning Data into Insights & Experiences</p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">View Projects</a>
@@ -417,7 +416,7 @@ html_content = """
 
         <section id="about" class="section">
             <div class="section-content">
-                <h2>🔍 About Me</h2>
+                <h2>About Me</h2>
                 <p>I'm a passionate data analyst with 3+ years of experience in healthcare insurance, skilled at building data visualizations, automated workflows, and AI-powered applications.</p>
                 <p>I enjoy making complex information easy to understand, whether through Power BI dashboards, Streamlit apps, or automated pipelines.</p>
                 <p>My focus: combining data, AI, and user experience to create tools that actually help people.</p>
@@ -446,7 +445,7 @@ html_content = """
 
         <section id="projects" class="section">
             <div class="section-content">
-                <h2>🚀 My Projects</h2>
+                <h2>My Projects</h2>
                 <div class="projects-grid">
                     <div class="project-card">
                         <h3>AI Health Assistant</h3>
@@ -470,13 +469,13 @@ html_content = """
 
         <section id="contact" class="section">
             <div class="section-content">
-                <h2>📬 Contact Me</h2>
+                <h2>Contact Me</h2>
                 <p>Email: your-email@example.com</p>
                 <p>GitHub: github.com/yourusername</p>
                 <p>Streamlit Cloud: My deployed apps</p>
 
                 <div class="quote" style="margin-top: 3rem; padding: 2rem; background: rgba(255, 255, 255, 0.1); border-radius: 15px; text-align: center; font-style: italic; font-size: 1.2rem; color: #ffd700;">
-                    ✨ "Great data + good design = better decisions."
+                    "Great data + good design = better decisions."
                 </div>
             </div>
         </section>
